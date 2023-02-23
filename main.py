@@ -7,7 +7,7 @@ loop = asyncio.new_event_loop()
 bot  = Bot(BOT_TOKEN, parse_mode='HTML')
 dp   = Dispatcher(bot, loop=loop)
 
-openai.api_key = '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'
+openai.api_key = 'YOUR_OPEN_API_KEY'
 
 @dp.message_handler(commands= "start")
 async def start(message: types.Message):
